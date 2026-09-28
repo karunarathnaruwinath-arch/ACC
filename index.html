@@ -1,212 +1,897 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sri Rahula M.M.V. | Welcome</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#06152f">
+
+    <title>Sri Rahula M.M.V. | Kala Mangalya 2026</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ENTER EXPERIENCE -->
-  <main id="gateExperience" class="gate-experience">
+<!-- =========================================================
+     OPENING GATE EXPERIENCE
+========================================================= -->
 
-    <div class="gate-photo" aria-hidden="true"></div>
-    <div class="cinematic-overlay"></div>
+<section id="gateExperience" class="gate-experience">
 
-    <!-- Decorative stage atmosphere -->
-    <div class="stage-light light-one"></div>
-    <div class="stage-light light-two"></div>
-    <div class="music-notes" aria-hidden="true">♪ ♫ ♪</div>
-    <div class="mask mask-one">◉</div>
-    <div class="mask mask-two">◉</div>
+    <!-- Background -->
+    <div class="gate-background"></div>
 
-    <div class="gate-title">
-      <span >SRI RAHULA M.M.V. • 2026</span>
-      <h1 class="fm basuru"">ආයුබෝවන් !<br><span>සාදරයෙන් පිළිගන්නෙමු...</span></h1>
-      
+    <!-- Dark cinematic overlay -->
+    <div class="gate-overlay"></div>
 
-      <br>
-    </div>
-<br>
-    <!-- The animated gate -->
-    <div id="gateDoors" class="gate-doors" aria-hidden="true">
-      <div class="gate-panel gate-left">
-        <div class="gate-bars"></div>
-        <div class="gate-ornament">✦</div>
-      </div>
-      <div class="gate-panel gate-right">
-        <div class="gate-bars"></div>
-        <div class="gate-ornament">✦</div>
-      </div>
+    <!-- Animated lights -->
+    <div class="spotlight spotlight-one"></div>
+    <div class="spotlight spotlight-two"></div>
+
+    <!-- Stars -->
+    <div class="stars"></div>
+
+    <!-- Top logo -->
+    <div class="gate-logo">
+        <img src="assets/logo.png" alt="School Logo">
     </div>
 
-    <div class="enter-area">
-      <button id="enterBtn" class="enter-btn">
-        <span class="enter-ring"></span>
-        <span class="enter-icon">↗</span>
-        <span class="enter-text">
-          <b>WELCOME</b>
-          <small>Open the Gate</small>
-        </span>
-      </button>
-      <p>Click to open the school gate</p>
+    <!-- Welcome text -->
+    <div class="gate-content">
+
+        <div class="event-small">
+            SRI RAHULA M.M.V. • 2026
+        </div>
+
+        <h1>
+            ආයුබෝවන්!
+            <span>සාදරයෙන් පිළිගන්නෙමු...</span>
+        </h1>
+
+        <p class="gate-event-name">
+            ශ්‍රී රාහුලීය කලා මංගල්‍යය
+        </p>
+
+        <!-- Countdown on opening screen -->
+        <div class="mini-countdown">
+
+            <div>
+                <strong id="gateDays">00</strong>
+                <span>දින</span>
+            </div>
+
+            <div>
+                <strong id="gateHours">00</strong>
+                <span>පැය</span>
+            </div>
+
+            <div>
+                <strong id="gateMinutes">00</strong>
+                <span>මිනිත්තු</span>
+            </div>
+
+            <div>
+                <strong id="gateSeconds">00</strong>
+                <span>තත්පර</span>
+            </div>
+
+        </div>
+
     </div>
+
+
+    <!-- =====================================================
+         GATE
+    ====================================================== -->
+
+    <div id="gateDoors" class="gate-doors">
+
+        <!-- LEFT DOOR -->
+        <div class="gate-panel gate-left">
+
+            <div class="gate-decoration">
+
+                <div class="gate-circle"></div>
+
+                <span>✦</span>
+                <span>✦</span>
+                <span>✦</span>
+
+            </div>
+
+            <div class="gate-bars"></div>
+
+        </div>
+
+
+        <!-- RIGHT DOOR -->
+        <div class="gate-panel gate-right">
+
+            <div class="gate-decoration">
+
+                <div class="gate-circle"></div>
+
+                <span>✦</span>
+                <span>✦</span>
+                <span>✦</span>
+
+            </div>
+
+            <div class="gate-bars"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ENTER BUTTON -->
+    <div class="enter-container">
+
+        <button id="enterBtn" class="enter-button">
+
+            <span class="enter-glow"></span>
+
+            <span class="enter-icon">
+                ↗
+            </span>
+
+            <span class="enter-label">
+
+                <strong>WELCOME</strong>
+
+                <small>
+                    Open the Gate
+                </small>
+
+            </span>
+
+        </button>
+
+        <p>
+            Click to enter the celebration
+        </p>
+
+    </div>
+
+
+    <!-- Opening message -->
 
     <div id="gateMessage" class="gate-message">
-      <span>THE GATE IS OPENING...</span>
+        <span>THE GATE IS OPENING...</span>
     </div>
-  </main>
 
-  <!-- MAIN PORTAL -->
-  <section id="portal" class="portal hidden">
+</section>
+
+
+<!-- =========================================================
+     MAIN WEBSITE
+========================================================= -->
+
+<main id="portal" class="portal">
+
+
+    <!-- NAVIGATION -->
 
     <header class="nav-wrap">
-      <nav class="navbar glass">
-        <a href="#home" class="brand">
-          <div class="brand-mark">SR</div>
-          <div>
-            <strong>Sri Rahula M.M.V.</strong>
-            <small>ශ්‍රී රාහුලීය කලා මංගල්‍යය 2026</small>
-          </div>
-        </a>
 
-        <button id="menuBtn" class="menu-btn">☰</button>
+        <nav class="navbar">
 
-        <div id="navLinks" class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#welcome">Welcome</a>
-          <a href="#history">History</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#videos">Videos</a>
-        </div>
-      </nav>
+            <a href="#home" class="brand">
+
+                <div class="brand-logo">
+                    <img src="assets/logo.png" alt="Logo">
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        Sri Rahula M.M.V.
+                    </strong>
+
+                    <small>
+                        ශ්‍රී රාහුලීය කලා මංගල්‍යය 2026
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <button id="menuBtn"
+                    class="menu-btn"
+                    aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+
+            <div id="navLinks" class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#welcome">Welcome</a>
+                <a href="#history">History</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#videos">Videos</a>
+
+            </div>
+
+        </nav>
+
     </header>
 
-    <section id="home" class="hero section">
-      <div class="hero-content">
-        <span style="font-size: x-large;">ශ්‍රී රාහුලීය කලා මංගල්‍යය 2026</span>
-        <h2><b>සාදරයෙන්</b> <br><span>පිළිගන්නෙමු</span></h2>
-        <p aria-setsize="10">
-          සංගීතයේ මියුරු නාදයෙන්.... නාට්‍යයේ හැගුම්බර රගපෑමෙන්....<br>
-          නර්ථනාංගවල අපූර්වත්වයෙන්..... තාක්ෂණයේ මවිතයෙන් හැඩගැන්වූ.... <br>
-          රසවින්දනයක් සදහා පැමිණි ඔබ වෙත අපගේ හදපිරි ප්‍රණාමය...
-        </p>
-        <div class="hero-actions">
-          <a href="#welcome" class="primary-btn">Explore School <span>↘</span></a>
-          <a href="#gallery" class="secondary-btn">View Memories</a>
-        </div>
-      </div>
 
-      <div class="hero-visual">
-        <img src="assets/school-gate.jpg" alt="Sri Rahula M.M.V. school gate">
-        <div class="floating-card glass">
-          <span class="dot"></span>
-          <div>
-            <strong>Welcome, Guest</strong>
-            <small>The gate is open — explore our story.</small>
-          </div>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+
+                <span></span>
+
+                23 OCTOBER 2026
+
+                <span></span>
+
+            </div>
+
+
+            <p class="hero-kicker">
+                ශ්‍රී රාහුලීය කලා මංගල්‍යය
+            </p>
+
+
+            <h2>
+
+                සාදරයෙන්
+
+                <span>
+                    පිළිගන්නෙමු
+                </span>
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                සංගීතයේ මියුරු නාදයෙන්,
+                නාට්‍යයේ හැඟුම්බර රංගනයෙන්,
+                නර්තනාංගවල අපූර්වත්වයෙන්
+                හැඩගැන්වූ අමරණීය කලා අත්දැකීමකට
+                ඔබ සැම සාදරයෙන් පිළිගනිමු.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#welcome"
+                   class="primary-btn">
+
+                    Explore Event
+                    <span>↓</span>
+
+                </a>
+
+                <a href="#gallery"
+                   class="secondary-btn">
+
+                    View Memories
+
+                </a>
+
+            </div>
+
         </div>
-      </div>
+
+
+        <!-- COUNTDOWN -->
+
+        <div class="countdown-wrapper">
+
+            <div class="countdown-title">
+                EVENT BEGINS IN
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="countdown-item">
+
+                    <strong id="days">00</strong>
+
+                    <span>DAYS</span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <strong id="hours">00</strong>
+
+                    <span>HOURS</span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <strong id="minutes">00</strong>
+
+                    <span>MINUTES</span>
+
+                </div>
+
+
+                <div class="countdown-separator">
+                    :
+                </div>
+
+
+                <div class="countdown-item">
+
+                    <strong id="seconds">00</strong>
+
+                    <span>SECONDS</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <span>SCROLL TO EXPLORE</span>
+
+            <div></div>
+
+        </div>
+
     </section>
+
+
+
+    <!-- =====================================================
+         WELCOME
+    ====================================================== -->
 
     <section id="welcome" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">A WARM WELCOME</span>
-        <h2>Welcome to our <span>school family.</span></h2>
-        <p>
-          We are delighted to welcome students, teachers, parents, alumni
-          and every guest to this digital celebration of Sri Rahula M.M.V.
-        </p>
-      </div>
 
-      <div class="welcome-grid">
-        <article class="info-card glass reveal">
-          <div class="icon">🎭</div>
-          <h3>Drama</h3>
-          <p>Celebrate expression, storytelling, theatre and the creativity of our students.</p>
-        </article>
-        <article class="info-card glass reveal">
-          <div class="icon">🎵</div>
-          <h3>Music</h3>
-          <p>Discover performances, melodies, instruments and unforgettable musical moments.</p>
-        </article>
-        <article class="info-card glass reveal">
-          <div class="icon">💃</div>
-          <h3>Dance</h3>
-          <p>Experience movement, culture and energy through our colourful performances.</p>
-        </article>
-      </div>
-    </section>
+        <div class="section-heading">
 
-    <section id="history" class="section history">
-      <div class="history-image glass">
-        <img src="assets/school-gate.jpg" alt="Sri Rahula M.M.V. school">
-      </div>
-      <div class="history-content">
-        <span class="eyebrow">OUR JOURNEY</span>
-        <h2>A history worth <span>remembering.</span></h2>
-        <p>
-          Replace this paragraph with the official history of Sri Rahula M.M.V.
-          You can include the founding story, important milestones, principals,
-          achievements, traditions and memorable events.
-        </p>
-        <div class="timeline">
-          <div><span>01</span><p><b>Beginning</b><small>Add the official founding story.</small></p></div>
-          <div><span>02</span><p><b>Growth</b><small>Add important school milestones.</small></p></div>
-          <div><span>03</span><p><b>Today</b><small>Add current achievements and vision.</small></p></div>
+            <span class="eyebrow">
+                A WARM WELCOME
+            </span>
+
+            <h2>
+
+                Welcome to our
+                <span>
+                    celebration.
+                </span>
+
+            </h2>
+
+            <p>
+
+                අපගේ පාසලේ දරුවන්ගේ නිර්මාණශීලීත්වය,
+                දක්ෂතාවය සහ කලා හැකියාවන් එකම වේදිකාවක
+                විඳගැනීමට ඔබට ආරාධනා කරමු.
+
+            </p>
+
         </div>
-      </div>
+
+
+        <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <div class="feature-icon">
+                    🎭
+                </div>
+
+                <h3>
+                    Drama
+                </h3>
+
+                <p>
+
+                    වේදිකා නාට්‍ය,
+                    රංගනය සහ කතාන්දර
+                    තුළින් නිර්මාණශීලීත්වය.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <div class="feature-icon">
+                    🎵
+                </div>
+
+                <h3>
+                    Music
+                </h3>
+
+                <p>
+
+                    මියුරු ගීත,
+                    වාදන සහ සංගීතමය
+                    ඉදිරිපත් කිරීම්.
+
+                </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <div class="feature-icon">
+                    💃
+                </div>
+
+                <h3>
+                    Dance
+                </h3>
+
+                <p>
+
+                    සංස්කෘතිය,
+                    සම්ප්‍රදාය සහ නවීනත්වය
+                    නර්තනය තුළින්.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
     </section>
 
-    <section id="gallery" class="section">
-      <div class="section-heading centered">
-        <span class="eyebrow">MEMORIES</span>
-        <h2>Moments from <span>our journey.</span></h2>
-      </div>
-      <div class="gallery">
-        <figure class="gallery-item large reveal"><img src="assets/school-gate.jpg" alt="School gate"><figcaption>Our School</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="assets/photo-2.jpg" alt="School event"><figcaption>Celebrations</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="assets/photo-3.jpg" alt="Students"><figcaption>Students</figcaption></figure>
-        <figure class="gallery-item reveal"><img src="assets/photo-4.jpg" alt="School community"><figcaption>Community</figcaption></figure>
-      </div>
+
+
+    <!-- =====================================================
+         EVENT COUNTDOWN SECTION
+    ====================================================== -->
+
+    <section class="event-countdown-section">
+
+        <div class="countdown-background"></div>
+
+        <div class="countdown-content">
+
+            <span class="eyebrow">
+                MARK YOUR CALENDAR
+            </span>
+
+            <h2>
+                23 <span>OCTOBER</span> 2026
+            </h2>
+
+            <p>
+                The stage is ready.
+                The performers are ready.
+                Are you ready?
+            </p>
+
+
+            <div class="big-countdown">
+
+                <div>
+                    <strong id="bigDays">00</strong>
+                    <span>Days</span>
+                </div>
+
+                <div>
+                    <strong id="bigHours">00</strong>
+                    <span>Hours</span>
+                </div>
+
+                <div>
+                    <strong id="bigMinutes">00</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <strong id="bigSeconds">00</strong>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="videos" class="section">
-      <div class="section-heading">
-        <span class="eyebrow">WATCH</span>
-        <h2>Stories in <span>motion.</span></h2>
-        <p>Add your Drama, Music, Dance, school-history and event videos here.</p>
-      </div>
-      <div class="video-grid">
-        <article class="video-card glass reveal">
-          <div class="video-box"><video controls poster="assets/video-cover-1.jpg"><source src="assets/video-1.mp4" type="video/mp4"></video></div>
-          <h3>School Story</h3>
-          <p>Add your official school video.</p>
-        </article>
-        <article class="video-card glass reveal">
-          <div class="video-box"><video controls poster="assets/video-cover-2.jpg"><source src="assets/video-2.mp4" type="video/mp4"></video></div>
-          <h3>Drama & Music</h3>
-          <p>Add your cultural event highlights.</p>
-        </article>
-      </div>
+
+
+    <!-- =====================================================
+         HISTORY
+    ====================================================== -->
+
+    <section id="history" class="section history-section">
+
+        <div class="history-image">
+
+            <img src="assets/school-gate.jpg"
+                 alt="School">
+
+        </div>
+
+
+        <div class="history-content">
+
+            <span class="eyebrow">
+                OUR JOURNEY
+            </span>
+
+            <h2>
+
+                A history worth
+                <span>
+                    remembering.
+                </span>
+
+            </h2>
+
+            <p>
+
+                Replace this section with the official history
+                of your school. You can include the founding,
+                important milestones, principals, achievements,
+                traditions and memorable moments.
+
+            </p>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Beginning
+                        </h3>
+
+                        <p>
+                            Add the official founding story.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Growth
+                        </h3>
+
+                        <p>
+                            Add important school milestones.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Today
+                        </h3>
+
+                        <p>
+                            Add current achievements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="section final-cta">
-      <div class="cta glass">
-        <span class="eyebrow">SRI RAHULA M.M.V.</span>
-        <h2>The gate is open.<br><span>Let the story begin.</span></h2>
-        <p>Thank you for visiting our welcome portal.</p>
-        <a href="#home" class="primary-btn">Back to Top ↑</a>
-      </div>
+
+
+    <!-- =====================================================
+         GALLERY
+    ====================================================== -->
+
+    <section id="gallery" class="section gallery-section">
+
+        <div class="section-heading centered">
+
+            <span class="eyebrow">
+                MEMORIES
+            </span>
+
+            <h2>
+
+                Moments from
+                <span>
+                    our journey.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <figure class="gallery-item gallery-large">
+
+                <img src="assets/school-gate.jpg"
+                     alt="School">
+
+                <figcaption>
+                    Our School
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+                <img src="assets/photo-2.jpg"
+                     alt="Event">
+
+                <figcaption>
+                    Celebrations
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+                <img src="assets/photo-3.jpg"
+                     alt="Students">
+
+                <figcaption>
+                    Students
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="gallery-item">
+
+                <img src="assets/photo-4.jpg"
+                     alt="Community">
+
+                <figcaption>
+                    Community
+                </figcaption>
+
+            </figure>
+
+        </div>
+
     </section>
 
-    <footer>© 2026 Sri Rahula M.M.V. • Welcome Web Portal</footer>
-  </section>
 
-  <script src="script.js"></script>
+
+    <!-- =====================================================
+         VIDEOS
+    ====================================================== -->
+
+    <section id="videos" class="section videos-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                WATCH
+            </span>
+
+            <h2>
+
+                Stories in
+                <span>
+                    motion.
+                </span>
+
+            </h2>
+
+            <p>
+                Watch our school stories and cultural performances.
+            </p>
+
+        </div>
+
+
+        <div class="video-grid">
+
+
+            <article class="video-card">
+
+                <div class="video-box">
+
+                    <video controls
+                           poster="assets/video-cover-1.jpg">
+
+                        <source src="assets/video-1.mp4"
+                                type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <h3>
+                    School Story
+                </h3>
+
+                <p>
+                    Our school journey.
+                </p>
+
+            </article>
+
+
+            <article class="video-card">
+
+                <div class="video-box">
+
+                    <video controls
+                           poster="assets/video-cover-2.jpg">
+
+                        <source src="assets/video-2.mp4"
+                                type="video/mp4">
+
+                    </video>
+
+                </div>
+
+                <h3>
+                    Drama & Music
+                </h3>
+
+                <p>
+                    Cultural event highlights.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FINAL CTA
+    ====================================================== -->
+
+    <section class="final-section">
+
+        <div class="final-content">
+
+            <img src="assets/logo.png"
+                 alt="School Logo"
+                 class="final-logo">
+
+            <span class="eyebrow">
+                SRI RAHULA M.M.V.
+            </span>
+
+            <h2>
+
+                The gate is open.
+                <span>
+                    Let the story begin.
+                </span>
+
+            </h2>
+
+            <p>
+                ශ්‍රී රාහුලීය කලා මංගල්‍යය 2026
+            </p>
+
+            <a href="#home"
+               class="primary-btn">
+
+                Back to Top ↑
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            © 2026 Sri Rahula M.M.V.
+        </div>
+
+        <div>
+            ශ්‍රී රාහුලීය කලා මංගල්‍යය
+        </div>
+
+    </footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
